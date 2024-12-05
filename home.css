@@ -6,6 +6,15 @@ body {
     margin: 0;
 }
 
+.header-contant {
+    width: auto;
+    height: 72px;
+    background-color: #b6b6b6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #logo {
     width: 250px;
     height: 100px;
@@ -27,11 +36,45 @@ span.material-symbols-outlined {
     'opsz' 36
 }
 
-.header-contant {
-    width: auto;
-    height: 72px;
-    background-color: #b6b6b6;
+.group-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 20px 160px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 384px;
+    height: 38px;
+    background-color: #d9d9d9;
+    padding: 0 15px;
+    border-radius: 25px;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    margin-right: 20px;
+}
+
+.search input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.search input::placeholder {
+    color: #b8b3b3;
+}
+
+.search button {
+    background: none;
+    border: none;
+    color: black;
 }
