@@ -35,3 +35,36 @@ span.material-symbols-outlined {
     align-items: center;
     justify-content: space-between;
 }
+/* .discount{
+    display: flex;
+} */
+.discount img{
+    box-sizing: border-box;
+    width: 1041px;
+    height: 522px;
+    margin: auto;
+}
+#bestSell{
+    margin: 45px 0;
+    font-size: 46px;
+    font-weight: 9800;
+    font-style: italic;
+}
+.best{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 20px;
+}
+.box{
+    background-color: rgb(215, 214, 214);
+    border-radius: 20px;
+}
+.box img{
+    display: flex;
+    width: 244px;
+    height: 319px;
+    border-radius: 20px;
+    padding: 5px;
+}
