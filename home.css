@@ -40,37 +40,41 @@ span.material-symbols-outlined {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 20px 160px;
 }
-/* .discount{
+
+.search {
     display: flex;
-} */
-.discount img{
-    box-sizing: border-box;
-    width: 1041px;
-    height: 522px;
-    margin: auto;
-}
-#bestSell{
-    margin: 45px 0;
-    font-size: 46px;
-    font-weight: 9800;
-    font-style: italic;
-}
-.best{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 70px;
-    padding: 20px;
+    width: 384px;
+    height: 38px;
+    background-color: #d9d9d9;
+    padding: 0 15px;
+    border-radius: 25px;
 }
-.box{
-    background-color: rgb(215, 214, 214);
-    border-radius: 20px;
+
+.nav a{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    margin-right: 20px;
 }
-.box img{
-    display: flex;
-    width: 244px;
-    height: 319px;
-    border-radius: 20px;
-    padding: 5px;
+
+.search input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.search input::placeholder {
+    color: #b8b3b3;
+}
+
+.search button {
+    background: none;
+    border: none;
+    color: black;
 }
