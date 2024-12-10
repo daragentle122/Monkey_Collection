@@ -14,6 +14,8 @@ body {
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 1000;
 }
 
@@ -38,7 +40,14 @@ span.material-symbols-outlined {
     'opsz' 36
 }
 
+.main-area {
+    width: 100%;
+    height: auto;
+}
+
 .group-nav {
+    min-width: 1200px;
+    height: 175px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -103,14 +112,39 @@ span.material-symbols-outlined {
     gap: 70px;
     padding: 20px;
 }
-.box{
-    background-color: rgb(215, 214, 214);
+
+.box {
+    width: 244px;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    background-color: #b6b6b6;
     border-radius: 20px;
 }
-.box img{
-    display: flex;
+
+.box img {
     width: 244px;
-    height: 319px;
-    border-radius: 20px;
-    padding: 5px;
+    height: 318px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text {
+    margin-top: 6px;
+}
+
+.text p:first-child{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.text p:last-child {
+    margin-top: 2px;
+}
+
+.box p{
+    margin: 0;
+    margin-left: 20px;
+    text-align: start;
+    font-weight: 500;
 }
