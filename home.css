@@ -8,13 +8,14 @@ body {
 
 .header-contant {
     width: 100%;
-    height: 72px;
+    height: 65px;
     background-color: #b6b6b6;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 #logo {
@@ -50,6 +51,7 @@ span.material-symbols-outlined {
     align-items: center;
     justify-content: space-between;
     margin: 20px 160px;
+    margin-bottom: 0;
 }
 
 .search {
@@ -88,15 +90,58 @@ span.material-symbols-outlined {
     color: black;
 }
 
-/* .discount{
-    display: flex;
-} */
-.discount img{
-    box-sizing: border-box;
-    width: 1041px;
-    height: 522px;
-    margin: auto;
+/* Slider */
+#slider img {
+    width: 1000px;
+    height: 575px;
+    border-radius: 20px;
 }
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:nth-child(5) {
+    margin-right: 0px;
+}
+
+input[type=radio]:checked {
+    opacity: 1;
+}
+
+#slider {
+    width: 50%;
+    height: 30vw;
+    position: relative;
+    perspective: 600px;
+    margin: 0px auto;
+    transform-style: preserve-3d;
+}
+
+#slider label {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    transition: 600ms ease;
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3 {
+    transform: translate3d(0%, 0, 0px);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide1 {
+    transform: translate3d(20%, 0, -100px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide1, #s3:checked ~ #slide2 {
+    transform: translate3d(-20%, 0, -100px);
+}
+
 #bestSell{
     margin: 45px 0;
     font-size: 46px;
@@ -112,7 +157,7 @@ span.material-symbols-outlined {
 }
 
 .box {
-    width: 244px;
+    width: 310px;
     height: 376px;
     display: flex;
     flex-direction: column;
@@ -121,7 +166,7 @@ span.material-symbols-outlined {
 }
 
 .box img {
-    width: 244px;
+    width: 310px;
     height: 318px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
