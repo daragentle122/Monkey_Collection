@@ -19,7 +19,7 @@ body {
 }
 
 #logo {
-    width: 250px;
+    width: 175px;
     height: 100px;
     margin-left: 142px;
 }
@@ -29,14 +29,15 @@ body {
     gap: 30px;
 }
 
-span.material-symbols-outlined {
+a.material-symbols-outlined {
     font-size: 36px;
     margin-left: 20px;
+    cursor: pointer;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
-    'opsz' 36
+    'opsz' 36;
 }
 
 .main-area {
@@ -66,7 +67,7 @@ span.material-symbols-outlined {
 
 .nav a{
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     color: black;
     margin-right: 20px;
 }
@@ -142,70 +143,81 @@ input[type=radio]:checked {
     transform: translate3d(-20%, 0, -100px);
 }
 
-#bestSell{
+/* Product Card */
+#topic{
     margin: 45px 0;
     font-size: 46px;
     font-weight: 900;
     font-style: italic;
 }
-.best{
+.group-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 100px;
     padding: 20px;
 }
 
 .box {
-    width: 310px;
-    height: 376px;
+    width: 350px;
+    height: 430px;
     display: flex;
     flex-direction: column;
-    background-color: #b6b6b6;
+    background-color: #EEEEEE;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .box img {
-    width: 310px;
+    width: 350px;
     height: 318px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.text {
-    margin-top: 6px;
+.box:hover {
+    transform: scale(1.1);
+    transition: 300ms ease;
 }
 
-.text p:first-child{
+.product {
+    position: relative;
+    width: 350px;
+    height: 112px;
+}
+
+.product .product-name{
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    margin-top: 20px;
 }
 
-.text p:last-child {
-    margin-top: 2px;
+.product .product-price {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    margin-bottom: 10px;
 }
 
-.box p{
-    margin: 0;
-    margin-left: 20px;
-    text-align: start;
-    font-weight: 500;
-}
-
+/* Footer */
 .footer{
     background-color: #dcdcdc;
     width: 100%;
-    height: 250px;
+    height: 150px;
     justify-content: center;
-    padding-top: 50px;
+    padding: 20px 0;
+    margin-top: 100px;
 }
 
 .web a{
     text-decoration: none;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .menu{
@@ -238,7 +250,7 @@ input[type=radio]:checked {
 
 .copyright{
     font-size: 12px;
-    padding-top: 75px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 18px;
+    padding-bottom: 10px;
     color: #7e7d7d;
 }
