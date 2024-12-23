@@ -1,112 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<style>
-    body{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(https://i.pinimg.com/736x/bd/ac/32/bdac327b05ddaa05216dfa08c9e734c3.jpg);
-        background-size: cover;
-        font-family: Arial, sans-serif;
-    }
-
-    .box{
-        width: 500px;
-        height: 420px;
-        background-color: white;
-        border-radius: 5px;
-    }
-
-    .box h2{
-        text-align: center;
-    }
-
-    .social{
-        display: flex;
-        justify-content: space-around;
-    }
-    .social a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        width: 150px;
-        height: 20px;
-        border-radius: 5px;
-        padding: 10px;
-    }
-     .google{
-        text-decoration: none;
-        color: white;
-        background-color: orangered;
-     }
-     .fb{
-        text-decoration: none;
-        color: white;
-        background-color: blue;
-     }
-    .or{
-        display: flex;
-        margin: auto;
-        margin-bottom: 24px;
-    }
-    .or hr{
-        
-        height: 2px;
-        width: 200px;
-        background-color: rgb(236, 236, 236);
-        border: none;
-    }
-    .fill{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        font-size: 12px;
-        gap: 5px;
-    }
-    .fill input{
-        border: 1px solid rgb(191, 191, 191);
-        border-radius: 5px;
-        height: 30px;
-    }
-    button{
-        height: 40px;
-        color: white;
-        background-color: purple;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-</style>
 
 <body>
     <div class="box">
-        <h2>Log in with</h2>
+        <h1>Login</h1>
         <div class="fill">
-            <label for="">Email</label>
-            <input type="text"><br>
-            <label for="">Password</label>
-            <input type="password"><br>
-            <button type="submit">Continue with Email</button>
-            <a href="" style="text-align: center; text-decoration: none; color: grey; padding:10px;">Forget your password?</a>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Password" class="password">
+            </div>
+            <button type="submit">Log In</button>
+            <a href="#" style="text-align: center; text-decoration: none; color: grey; padding:10px;">Forget your
+                password?</a>
         </div>
-        
+
         <div class="or">
-            <hr style="size: 100px;" style="color: red;"> or <hr>
+            <hr style="size: 100px;" style="color: red;"> or
+            <hr>
         </div>
         <div class="social">
-            <a href="" class="google"><i class="fa fa-google"></i> Google</a>
-            <a href="" class="fb"><i class="fa fa-facebook"></i> Facebook</a>
+            <a href="#" class="google"><i class="fa fa-google"></i> Google</a>
+            <a href="#" class="fb"><i class="fa fa-facebook"></i> Facebook</a>
         </div>
     </div>
 </body>
+
 </html>

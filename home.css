@@ -160,8 +160,8 @@ a.material-symbols-outlined {
 
 /* Slider */
 #slider img {
-    width: 1000px;
-    height: 575px;
+    width: 650px;
+    height: 375px;
     border-radius: 20px;
 }
 
@@ -179,7 +179,8 @@ input[type=radio]:checked {
 
 .slider-part {
     border: none;
-    height: 600px;
+    margin-top: 100px;
+    height: 400px;
 }
 
 #slider {
@@ -325,7 +326,6 @@ input[type=radio]:checked {
     font-size: 12px;
 }
 
-
 .menu b:hover {
     cursor: pointer;
     text-decoration: underline;
@@ -335,6 +335,11 @@ input[type=radio]:checked {
     display: flex;
     justify-content: center;
     gap: 30px;
+    height: 30px;
+}
+
+.socials img {
+    width: 30px;
     height: 30px;
 }
 
