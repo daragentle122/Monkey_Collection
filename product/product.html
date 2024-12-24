@@ -83,11 +83,10 @@
         <div class="main-area">
             <div class="container">
                 <div class="right">
-                    <div class="pic1">
+                    <div class="pic">
                         <img src="https://i.pinimg.com/736x/70/18/3f/70183fd7334e358ded5491306f1c4aae.jpg" alt="">
                     </div>
-                    <div class="pic2 ">
-                        <img src="https://i.pinimg.com/736x/36/11/2e/36112e79f73e58f39fafcf05040ec4fc.jpg" alt="">
+                    <div class="pic1 ">
                         <img src="https://i.pinimg.com/736x/36/11/2e/36112e79f73e58f39fafcf05040ec4fc.jpg" alt="">
                         <img src="https://i.pinimg.com/736x/36/11/2e/36112e79f73e58f39fafcf05040ec4fc.jpg" alt="">
                         <img src="https://i.pinimg.com/736x/36/11/2e/36112e79f73e58f39fafcf05040ec4fc.jpg" alt="">
@@ -101,13 +100,13 @@
                             <h2>Price $</h2>
                             <div class="line"></div>
                         </div>
-                        <div class="upper2">
-                            <h2>Shipping and Returns</h2>
-                            <p>Free standard shipping on orders over $60 before tax, plus free returns on all qualifying
-                                orders.</p>
-                            <div class="line"></div>
-                        </div>
-                        <div class="size">
+                        <div class="color-size">
+                            <h2>Color</h2>
+                            <div class="row-color">
+                                <div class="box">IMG</div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
                             <h2>Size</h2>
                             <div class="row">
                                 <div class="box"></div>
@@ -117,11 +116,12 @@
                                 <div class="box"></div>
                                 <div class="box"></div>
                             </div>
-                            <h2>SIZEGUIDE <i class="fa-regular fa-ruler"></i></h2>
+                            <p style="font-weight: bold; text-decoration: underline;">SIZEGUIDE <i class="fa-regular fa-ruler"></i></p>
+                            <div class="line"></div>
                         </div>
-                        <hr>
+
                         <div class="lower">
-                            <div class="right">
+                            <div class="quatity">
                                 <select name="" id="">
                                     <option value="">QTY</option>
                                     <option value="">1</option>
@@ -130,25 +130,40 @@
                                     <option value="">4</option>
                                     <option value="">5</option>
                                 </select>
+
+                                <div class="option-container">
+                                    <div class="option">
+                                        <label>
+                                            <input type="radio" name="shipping" value="address" checked>
+                                            Ship to an address
+                                        </label>
+                                        <div class="description">
+                                            <span>FREE SHIPPING</span> | <span class="in-stock">In stock</span>
+                                        </div>
+                                    </div>
+                                    <div class="option">
+                                        <label>
+                                            <input type="radio" name="shipping" value="pickup">
+                                            Store Pickup
+                                        </label>
+                                        <div class="description">
+                                            <span>FREE SHIPPING</span> | <span class="in-stock">In stock</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="left">
-                                <div class="a">
-                                    <div class="ship">
-                                        <input type="radio">
-                                        <label for="">Ship to an address</label><br>&emsp;&emsp14;
-                                        <p>FREE SHIPPING <b>|</b><span> In stock</span> </p>
-                                    </div>
-                                    <div class="store">
-                                        <input type="radio">
-                                        <label for="">Store Pickup</label><br>&emsp;&emsp14;
-                                        <p>FREE SHIPPING <b>|</b><span> In stock</span> </p>
-                                    </div>
-                                </div>
-                                <div class="b">
-                                    <button>ADD TO CART</button>
-                                    <br><br>
-                                    <button>BUY NOW</button>
-                                </div>
+
+                            <div class="b">
+                                <button>ADD TO CART</button>
+                                <button style="margin-bottom: 50px;">BUY NOW</button>
+                                <div class="line"></div>
+                            </div>
+                            
+                            <div class="upper2">
+                                <h2 style="font-size: 28px;">Shipping and Returns</h2>
+                                <p style="color: #9F9F9F; font-size: 18px;">Free standard shipping on orders over $60 before tax, plus free returns on all qualifying
+                                    orders.</p>
+                                <div class="line"></div>
                             </div>
                         </div>
                     </div>

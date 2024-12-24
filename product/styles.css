@@ -68,7 +68,7 @@ a.material-symbols-outlined {
     font-size: 18px;
     color: black;
     font-weight: 750;
-    
+
 }
 
 .nav ul {
@@ -131,7 +131,7 @@ a.material-symbols-outlined {
     width: 350px;
     height: 38px;
     background-color: #d9d9d9;
-    margin-right : 50px ;
+    margin-right: 50px;
     padding: 0 15px;
     border-radius: 25px;
 }
@@ -157,40 +157,37 @@ a.material-symbols-outlined {
 
 .container {
     width: 1700px;
-    height: 1125px;
+    height: 100vh;
+    justify-content: center;
     margin: auto;
-    margin-bottom: 300px;
-    margin-top: 300px; 
+    margin-bottom: 200px;
+    margin-top: 150px;
     display: flex;
-    gap: 30px;
+    padding: 20px;
+    gap: 60px;
 }
 
 .right {
-    width: 55%;
-    height: 100%;
+    width: 730px;
+    height: 100vh;
 }
 
-.right .pic1 img {
-    width: 100%;
-    height: 900px;
+.right .pic img {
+    width: 730px;
+    height: auto;
 }
 
-.right .pic2 {
+.right .pic1 {
     margin-top: 50px;
     display: flex;
     width: 100%;
     height: 166px;
     justify-content: space-between;
-
-}
-
-.right .pic2 img {
-    width: 145px;
 }
 
 .left {
-    width: 40%;
-    height: 100%;
+    width: 710px;
+    height: 100vh;
 }
 
 .line {
@@ -199,7 +196,9 @@ a.material-symbols-outlined {
     background-color: #D9D9D9;
 }
 
-.upper1, .upper2, .size {
+.upper1,
+.upper2,
+.color-size {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -207,21 +206,22 @@ a.material-symbols-outlined {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 p {
-    font-size: 25px;
+    font-size: 20px;
 }
 
-hr {
-    border: 1px solid;
-    width: 725px;
-}
 
 .row {
     display: flex;
     justify-content: space-between;
+}
+
+.row-color {
+    display: flex;
+    gap: 20px;
 }
 
 .box {
@@ -232,54 +232,80 @@ hr {
 
 .lower {
     display: flex;
+    flex-direction: column;
 }
 
-.lower .left {
-    width: auto;
-}
-
-.lower .a {
-    width: auto;
+.quatity {
     display: flex;
+    gap: 50px;
+    margin: 40px 0;
 }
 
-h2 {
-    text-decoration: underline;
+.quatity select {
+    padding: 0 5px;
+    border-radius: 10px;
 }
 
-.lower .left .ship {
-    width: 300px;
+.option-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
 }
 
-.lower .right select {
-    width: 60px;
-    height: 30px;
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+}
+
+.option label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.description span {
+    font-weight: bold;
+}
+
+.description .in-stock {
+    color: #37D73C;
 }
 
 span {
-    font-size: 20px;
-    color: red;
-}
-
-.lower .left .store {
-    width: 200px;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
 }
 
 .b {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .b button {
-    margin-left: 50px;
-    width: 300px;
+    width: 380px;
     height: 50px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
 
 }
+
 /* Footer */
 .footer {
     background-color: #EEEEEE;
     width: 100%;
     height: 150px;
+    text-align: center;
     justify-content: center;
     padding: 20px 0;
     margin-top: 100px;
