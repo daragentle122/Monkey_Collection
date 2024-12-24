@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            gap: 20px;
+        }
+        .image-gallery {
+            flex: 1;
+        }
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        .thumbnails {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .thumbnails img {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .details {
+            flex: 1;
+        }
+        .details h1 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .details .price {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .details .color-options,
+        .details .size-options {
+            margin: 15px 0;
+        }
+        .details .buttons {
+            margin: 20px 0;
+        }
+        .details button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #333;
+            color: white;
+        }
+        .details button:hover {
+            background-color: #555;
+        }
+        .shipping {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Image Gallery -->
+        <div class="image-gallery">
+            <img src="placeholder.jpg" alt="Product Image">
+            <div class="thumbnails">
+                <img src="placeholder.jpg" alt="Thumbnail">
+                <img src="placeholder.jpg" alt="Thumbnail">
+                <img src="placeholder.jpg" alt="Thumbnail">
+                <img src="placeholder.jpg" alt="Thumbnail">
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="details">
+            <h1>Product Name</h1>
+            <p class="price">$ Price</p>
+
+            <!-- Color Options -->
+            <div class="color-options">
+                <p>Color:</p>
+                <div>
+                    <span style="display: inline-block; width: 20px; height: 20px; background-color: gray; margin-right: 5px;"></span>
+                    <span style="display: inline-block; width: 20px; height: 20px; background-color: black; margin-right: 5px;"></span>
+                    <span style="display: inline-block; width: 20px; height: 20px; background-color: blue; margin-right: 5px;"></span>
+                </div>
+            </div>
+
+            <!-- Size Options -->
+            <div class="size-options">
+                <p>Size:</p>
+                <div>
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button>Add to Cart</button>
+                <button>Buy Now</button>
+            </div>
+
+            <!-- Shipping Info -->
+            <div class="shipping">
+                <p>Free standard shipping on orders over $60 before tax, plus free returns on all qualifying orders.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

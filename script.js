@@ -12,5 +12,7 @@ function autoSlide() {
     slides[currentIndex].checked = true;
 }
 
-// Set the interval for automatic sliding (e.g., 3 seconds)
-setInterval(autoSlide, 3000);
+// Set the interval for automatic sliding (e.g., 5 seconds)
+setInterval(autoSlide, 5000);
+
+const product = [];
